@@ -1,0 +1,99 @@
+/* Reset some default browser styles */
+body, h1, h2, p, button, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Minecraftia', sans-serif; /* Assuming you're using a Minecraft-like font */
+}
+
+body {
+    background-color: #7bbd85; /* Grass Block Top Color */
+    color: #333; 
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #6a7039; /* Grass Block Side Color */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    color: #fff; 
+    font-size: 24px;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for contrast */
+    padding: 20px;
+    border: 5px solid #6a7039; /* Grass Block Side Color */
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modpack-section, .control-section, .status-section, .logs-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select, button, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff6a00; /* Minecraft Orange (Lava) */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e55b00; /* Darker shade for hover effect */
+}
+
+#stop-server-btn {
+    background-color: #0099cc; /* Minecraft Light Blue (Water) */
+    margin-top: 10px;
+}
+
+#stop-server-btn:hover {
+    background-color: #007a99; /* Darker shade for hover effect */
+}
+
+.status-section {
+    text-align: center;
+}
+
+#server-status {
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.logs-section textarea {
+    height: 200px;
+    resize: none;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 20px;
+}
