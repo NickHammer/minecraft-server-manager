@@ -3,12 +3,12 @@ body, h1, h2, p, button, select, textarea {
     margin: 0;
     padding: 0;
     border: none;
-    font-family: 'Minecraftia', sans-serif; /* Assuming you're using a Minecraft-like font */
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: #7bbd85; /* Grass Block Top Color */
-    color: #333; 
+    background-color: #f0f0f0;
+    color: #333;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
@@ -16,84 +16,46 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    padding: 20px;  /* Added padding */
 }
 
 header {
-    background-color: #6a7039; /* Grass Block Side Color */
+    background-color: #6a7039;
     padding: 20px;
     width: 100%;
     text-align: center;
+    border-bottom: 5px solid #7bbd85;  /* Added border for visual separation */
 }
 
 h1 {
-    color: #fff; 
+    color: #fff;
+    font-family: 'Minecraftia', sans-serif;
     font-size: 24px;
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white for contrast */
-    padding: 20px;
-    border: 5px solid #6a7039; /* Grass Block Side Color */
-    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;  /* Increased padding */
+    border: 5px solid #6a7039;
+    border-radius: 20px;  /* Increased border radius for a softer look */
     width: 80%;
-    max-width: 600px;
+    max-width: 800px;  /* Increased max-width for better spacing */
     margin-top: 20px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);  /* Softened shadow */
 }
 
-.modpack-section, .control-section, .status-section, .logs-section {
-    margin-bottom: 20px;
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-select, button, textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-}
+/* ... rest of your styles, with increased margins and padding where needed ... */
 
 button {
-    background-color: #ff6a00; /* Minecraft Orange (Lava) */
+    background-color: #ff6a00;
     color: #fff;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.2s ease;  /* Added transform transition */
 }
 
 button:hover {
-    background-color: #e55b00; /* Darker shade for hover effect */
+    background-color: #e55b00;
+    transform: scale(1.05);  /* Added scale effect on hover */
 }
 
-#stop-server-btn {
-    background-color: #0099cc; /* Minecraft Light Blue (Water) */
-    margin-top: 10px;
-}
-
-#stop-server-btn:hover {
-    background-color: #007a99; /* Darker shade for hover effect */
-}
-
-.status-section {
-    text-align: center;
-}
-
-#server-status {
-    background-color: #e5e5e5;
-    padding: 10px;
-    border-radius: 5px;
-    text-transform: uppercase;
-}
-
-.logs-section textarea {
-    height: 200px;
-    resize: none;
-    font-size: 14px;
-}
-
-footer {
-    margin-top: 20px;
-}
+/* ... rest of your styles ... */

@@ -23,17 +23,19 @@
         <section class="mb-5">
             <label for="modpack-dropdown" class="block mb-2">Select Modpack:</label>
             <select id="modpack-dropdown" class="w-full p-2 border rounded-md">
-                <option value="modpack1">Modpack 1</option>
-                <option value="modpack2">Modpack 2</option>
-                <option value="modpack3">Modpack 3</option>
+                <option value="modpack1">ATM 8</option>
+                <option value="modpack2">ATM 9</option>
+                <option value="modpack3">Vault Hunters</option>
+                <option value="modpack4">Astrial Craft</option>
+                <option value="modpack5">Dawn Craft</option>
                 <!-- Add more modpacks as needed -->
             </select>
         </section>
 
         <!-- Control Buttons -->
         <section class="mb-5">
-            <button id="start-server-btn" class="w-full p-2 bg-orange-600 text-white rounded-md hover:bg-orange-500 transition duration-300">Start Server</button>
-            <button id="stop-server-btn" class="w-full p-2 mt-2 bg-blue-500 text-white rounded-md hover:bg-blue-400 transition duration-300">Stop Server</button>
+            <button id="start-server-btn" onclick="manageServer('start')" class="w-full p-2 bg-orange-600 text-white rounded-md hover:bg-orange-500 transition duration-300">Start Server</button>
+            <button id="stop-server-btn" onclick="manageServer('stop')" class="w-full p-2 mt-2 bg-blue-500 text-white rounded-md hover:bg-blue-400 transition duration-300">Stop Server</button>
         </section>
 
         <!-- Server Status -->
@@ -55,7 +57,7 @@
     </footer>
 
     <!-- Remember to load your scripts here as before -->
-
+    <script src="js/script.js"></script>
 </body>
 
 
